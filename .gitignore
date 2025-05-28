@@ -1,0 +1,45 @@
+# Ignoruj pliki i foldery generowane przez zależności PHP (Composer)
+vendor/
+
+# Ignoruj pliki i foldery generowane przez zależności JavaScript (npm/Yarn)
+node_modules/
+
+# Ignoruj pliki konfiguracyjne środowiska
+.env
+.env.*
+!.env.example
+
+# Ignoruj pliki lock (jeśli nie chcesz ich commitować)
+composer.lock
+package-lock.json
+
+# Ignoruj foldery i pliki tymczasowe
+/storage/*.key
+/storage/logs/*
+/public/storage
+/public/hot
+/public/storage/*
+!/public/storage/.gitignore
+
+# Ignoruj pliki generowane przez edytory i IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignoruj pliki tymczasowe i logi
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignoruj foldery budowania i paczek
+/dist/
+/build/
+
+# Ignoruj pliki specyficzne dla systemu
+.DS_Store
+Thumbs.db
+
+# Ignoruj foldery testowe, jeśli nie chcesz ich commitować
+/tests/coverage/
